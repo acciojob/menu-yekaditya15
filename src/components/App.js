@@ -33,7 +33,7 @@ function App() {
       </header>
       <section>
         {items.map((item) => (
-          <article key={item.id}>
+          <article key={item.id} data-test-id={`menu-item-${item.category}`}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <p>${item.price}</p>
